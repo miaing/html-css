@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            outline表示为元素设置轮廓，与border的用法一样
+            两者之间最大的不同的是，outline不会影响网页的布局
+
+            box-shawdon可以设置元素的阴影
+                有四个值可以设置：
+                第一个值表示水平的阴影，正值时向右显示阴影，负值向左
+                第二个值表示垂直的阴影，正值向下，负值向上
+                第三个值表示阴影的透明度，值越大越不透明
+                第四个表示阴影的颜色
+
+            border-radiou用来设置元素的圆角
+            boder-top-left-radiou
+            boder-top-right-radiou
+            boder-botton-left-radiou 
+            boder-botton-right-radiou
+
+
+        
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            outline: red 5px solid;
+            box-shadow: 10px 10px 10px #000;
+        }
+        .box2{
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <br>
+    <div class="box2"></div>
+</body>
+</html>

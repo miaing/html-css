@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            backgroung-clip 
+            默认值：
+                border-box 默认值 背景在边框下显示
+                padding-box 背景不会在边框显示，将在内容区和内边距显示
+                conter-box 背景只在内容区显示
+            
+            background-origin 表示背景图片偏移量的原点
+                padding-box 默认值 背景从内边距起开始计算
+                border-box 偏移量从边框开始计算
+                conter-box 偏移量从内容区开始计算
+
+            baground-size设置图片的大小
+                 可选值：cover 表示图片的大小比例不变，图片将元素铺满
+                        contain 图片比例不变，图片将在元素中完整呈现
+            第一个值表示宽度，第二个值表示高 
+
+            background-attachment 图片是否会随页面移动
+                     scroll 默认值，会随页面的移动而移动
+                     fixde 不会随页面移动
+        */
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: rosybrown;
+            border: red 10px solid;
+            background-image: url(./img/2.jpg);
+           /* background-clip: padding-box;
+            background-origin: border-box;*/
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div>今天天气真好</div>
+</body>
+</html>

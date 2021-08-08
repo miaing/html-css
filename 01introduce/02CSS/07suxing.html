@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*
+         [属性] 选中含有属性的元素
+         [属性等于属性值]选中含有属性和属性值的元素
+         [属性^=属性值]选中属性以属性值开始的元素
+         [属性￥=属性值]选中属性以属性值结束的元素
+         [属性*=属性值]选中属性中含有属性值的所有的元素
+            
+         */ 
+         [title=abc]{
+             color: lightcoral;
+         }
+    </style>
+</head>
+<body>
+    <p title="abc">少小离家老大回</p>
+    <p title="ab">少小离家老大回</p>
+    <p title="abc">少小离家老大回</p>
+    <p>少小离家老大回</p>
+    <p>少小离家老大回</p>
+    <p>少小离家老大回</p>
+    <p>少小离家老大回</p>
+</body>
+</html>

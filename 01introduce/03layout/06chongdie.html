@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         外边距的重叠
+           相邻垂直方向的两个外边距会发生重叠
+            兄弟元素：当两个重叠外边距取正值时，一般取正值大的值
+                   特殊情况：当重叠值是一正一负时，取两者的相加
+                             当重叠值都是负值时，去两者的绝对值的大值
+            父子元素：子元素的外边距会直接传递给父元素
+                      父子之间的外边距会影响页面的布局 */
+
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        border: skyblue 1px solid;
+       
+
+    }
+    .box3{
+        width: 100px;
+        height: 99px;
+        background-color: springgreen;
+        margin-top: 100px;
+        
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box3"></div>
+    </div>
+   
+</body>
+</html>

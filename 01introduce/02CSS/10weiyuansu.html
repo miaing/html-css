@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        伪元素表示页面中不是真实存在的元素（页面中的位置）
+         通常以：：来表示
+         ：：first-letter 第一个字
+         ：：first-line 第一行
+         ::selection 选中的内容
+         ::before标签的前面
+         ::after标签的最后
+        */
+        /*div::first-letter{
+            color: yellowgreen;
+            font-size: 20px;*/
+        
+        p::selection{
+            background-color: rgb(99, 71, 255);
+            font: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        伪元素表示页面中不是真实存在的元素（页面中的位置
+        伪元素表示页面中不是真实存在的元素（页面中的位置
+        伪元素表示页面中不是真实存在的元素（页面中的位置
+    </div>
+    <p>
+        伪元素表示页面中不是真实存在的元素（页面中的位置
+    伪元素表示页面中不是真实存在的元素（页面中的位置
+    伪元素表示页面中不是真实存在的元素（页面中的位置
+    </p>
+</body>
+</html>

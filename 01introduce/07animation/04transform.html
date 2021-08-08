@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.box1{
+            /*width: 200px;
+            height: 200px;
+            color: #faa;
+            只适用于给定的元素的大小
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: indigo;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            top: 50%;
+            bottom: 50%;
+            transform:translateX(50%) translateY(50%);*/
+        
+        .box2, .box3{
+            width: 150px;
+            height: 200px;
+            background-color: #ffa;
+            float: left;
+            margin-left: 10px;
+            transform: 2s all;
+        }
+        .box2:hover, .box3:hover{
+            transform: translateY(4px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">啊啊啊啊啊</div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</body>
+</html>

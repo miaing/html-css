@@ -1,0 +1,51 @@
+{
+  "id": "2362151",
+  "name": "alitubiao",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19219569",
+      "name": "上衣-01",
+      "font_class": "shangyi-01",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "19219770",
+      "name": "短裤-02",
+      "font_class": "shangyi-02",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "19219771",
+      "name": "内裤-03",
+      "font_class": "shangyi-03",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "19219790",
+      "name": "袜子-04",
+      "font_class": "shangyi-04",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "19219834",
+      "name": "皮鞋-05",
+      "font_class": "shangyi-05",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "19219846",
+      "name": "高跟鞋-06",
+      "font_class": "shangyi-06",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    }
+  ]
+}

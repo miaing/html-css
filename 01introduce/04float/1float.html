@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            浮动可以设置元素的水平布局 float属性
+               可选值：none
+                      left
+                      right
+
+            特点：
+            元素浮动之后会完全脱离文档流，在文档流中将不再占用你位置
+            元素浮动以后将不会超过父元素的外边
+            元素浮动以后，后边的浮动元素将不会超过前边浮动元素
+            元素浮动以后，将不会超过前边的浮动元素，最高不会超过前边元素的高
+            元素浮动以后会向父元素的左边或者是右边移动
+
+            
+        */
+        .box1{
+            width: 800px;
+            height: 100px;
+            background-color: chartreuse;
+            float: left;
+        }
+        .box2{
+            width: 500px;
+            height: 100px;
+            background-color: chocolate;
+            
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

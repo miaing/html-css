@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        交集选择器：
+                作用：选中同时多个类选择器的元素
+                用法：选择器1.选择器2{}
+        并集选择器：
+                作用：选中两个不同类型的选择器
+                用法：选择器1，选择器2{}
+        */
+        .red{
+            color: goldenrod;
+        }
+        p.red{
+        font-size: 40px;
+        }
+        h1,div{
+            color: indigo;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">这是一个段落</p>
+    <span class="red">与段落做对比</span>
+    <h1>一级标题</h1>
+    <div>哈哈</div>
+</body>
+</html>

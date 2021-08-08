@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         当我们使用不同的选择器，选择相同的元素，并为相同的样式设制不同的属性值时，就会发生冲突
+         这时就需考虑样式的权重，即优先级
+
+         选择器的优先级
+           内联样式表 1，0，0，0
+           id选择器 0，1，0，0
+           伪类和伪元素选择器 0，0，1，0，
+           元素选择器 0，0，0，1
+           通配选择器0，0，0，0
+           继承的样式
+
+           需将选择器的所有权重相加，优先级越高，越先显示
+           当优先级相加后相同，则优先使用靠下的样式
+
+           也可以在样式的后面加！inportant,此时拥有最高的优先级，甚至可能超过内联样式表
+
+        */
+        /*#red{
+            color: brown;
+        }
+        .class{
+            color: chartreuse;
+        }*/
+        div{
+            color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="red" class="red">我是一个div<span>我是div里面的span</span></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        高度塌陷：
+            在页面布局中，父元素的高度将会子元素所撑开
+           元素浮动之后，会完全脱离文本流，
+           子元素浮动后将无法撑起父元素的高度，将会导致父元素的塌陷
+
+
+        BFC是css中隐藏的属性，开启BFC之后元素会生成一个相对独立的页面布局
+         特点：是可以将浮动的子元包含在父元素中
+         开启BFC的方式有：设置浮动、转换为块元素（都不推荐）、使用overflow开启
+
+        */
+        .out{
+            border: 10px red solid;
+            overflow: hidden;
+        }
+        .in{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(61, 42, 165);
+            float: left;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="out">
+       <div class="in"></div>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        子元素选择器：
+                作用：选中父元素下的子元素选择器
+                用法： 父元素>子元素
+        后代选择器：
+                作用：选中祖先元素下面的所有后代元素
+                用法：祖先元素>后代元素
+        */
+        span>p{
+            color: lawngreen;
+        }
+        div p{
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            <P>哈哈</P>
+        </span>
+        <p>耶耶耶耶耶耶</p>
+    </div>
+</body>
+</html>

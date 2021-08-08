@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         子元素是在父元素的内容区域内显示
+         如果子元素超过了父元素的范围，就会溢出来
+         可以根据flowover属性来解决溢出的问题
+           属性值：visible默认值
+                   hidden 内容直接裁剪不显示
+                   scroll 内容不会溢出，会产生滚动条
+                   auto 根据需要生成滚动条
+        */
+        .box1{
+            width: 200px;
+            height: 500px;
+            background-color: royalblue;
+            
+        }
+        .box2{
+            width: 100px;
+            height: 150px;
+            background-color: salmon;
+            margin-top: 20px;
+        }
+        #box3{
+            width: 100px;
+            height:150px ;
+            background-color: sienna;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div id="box3"></div>
+    </div>
+    
+</body>
+</html>
